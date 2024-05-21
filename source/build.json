@@ -1,0 +1,7 @@
+{
+    "EXE": [
+        "rm -rf dist test",
+        "mkdir dist test"
+    ],
+    "source/index.js": "dist"
+}

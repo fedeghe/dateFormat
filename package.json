@@ -1,0 +1,16 @@
+{
+  "name": "dateFormat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fedeghe/dateFormat.git",
+  "author": "fedeghe <fedeghe@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "malta": "^4.1.41",
+    "malta-millijs": "^1.0.5"
+  },
+  "scripts": {
+    "build": "malta source/build.json"
+  }
+}
