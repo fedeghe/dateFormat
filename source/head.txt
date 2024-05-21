@@ -1,0 +1,2 @@
+$PACKAGE.name$ v$PACKAGE.version$
+__SIZE__

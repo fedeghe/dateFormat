@@ -1,6 +1,6 @@
 {
-  "name": "dateFormat",
-  "version": "1.0.0",
+  "name": "validatedate",
+  "version": "0.0.1",
   "main": "index.js",
   "repository": "https://github.com/fedeghe/dateFormat.git",
   "author": "fedeghe <fedeghe@gmail.com>",
@@ -8,9 +8,13 @@
   "dependencies": {},
   "devDependencies": {
     "malta": "^4.1.41",
-    "malta-millijs": "^1.0.5"
+    "malta-header-comment": "^1.0.12",
+    "malta-js-uglify": "^1.0.13",
+    "malta-millijs": "^1.0.5",
+    "malta-mocha": "^1.0.18"
   },
   "scripts": {
-    "build": "malta source/build.json"
+    "dev": "malta source/buildev.json",
+    "dist": "malta source/buildtr.json"
   }
 }

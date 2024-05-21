@@ -2,8 +2,8 @@ var dateFormat = (function() {
     $$isValidDate.js$$
     $$isValidFormat.js$$
     return {
-        isValidDate,
-        isValidFormat
+        isValidDate: isValidDate,
+        isValidFormat: isValidFormat
     };
 })();
 /* istanbul ignore next */
