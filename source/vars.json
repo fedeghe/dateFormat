@@ -1,0 +1,8 @@
+{
+    "defaults": {
+        
+        "format": "YYYY-MM-DD",
+        "separators": ["/", "-", "."],
+        "placeholders": ["YYYY", "MM", "DD"]
+    }
+}

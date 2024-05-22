@@ -1,11 +1,19 @@
-function isValidFormat(format, allowedSep, els) {
-    els = els || ['YYYY', 'MM', 'DD'];
-    var hasEls = els.every(function (el){ return  format.includes(el);}),
+function isValidFormat(format, separators, placeholders) {
+    if (!format) return false;
+    separators = separators || _S;
+    placeholders = placeholders || _P;
+    var hasEls = placeholders.every(
+        function (ph) { return format.includes(ph); }
+    ),
         sep = format.replace(/\w/g, '').split(''),
-        sepOk = true;
-    if (allowedSep) sep.forEach(function(s) {
-        sepOk = sepOk && allowedSep.includes(s);
+        sepOk = true,
+        lesLength = placeholders.reduce((acc, s) => acc + s.length, 0),
+        targetLen = lesLength + sep.length;
+    if (separators) sep.forEach(function (s) {
+        sepOk = sepOk && separators.includes(s);
     });
-    return sepOk && sep.length === els.length - 1 &&
-        !!hasEls;
+
+    return format.length === targetLen
+        && sepOk && sep.length === placeholders.length - 1
+        && !!hasEls;
 };
