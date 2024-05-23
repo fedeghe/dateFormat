@@ -1,5 +1,5 @@
 [![Coverage Status](https://coveralls.io/repos/github/fedeghe/validatedate/badge.svg?branch=master)](https://coveralls.io/github/fedeghe/validatedate?branch=master)
-![noai](https://www.jmvc.org/img/HumanCoded100.png?x=2)
+![noai](https://www.jmvc.org/img/humanCoded.png?x=2)
 
 # validatedate
 
