@@ -25,6 +25,7 @@ describe('validatedate.isValidFormat', () => {
                 ['---'],
                 ['YYYY-DD-DD'],
                 ['YYYY-DD-MM', [':']],
+                ['YYYY-DD-nn', [':']],
                 ['YYYY-DD-MM', ['-'], ['day','month','year']],
             ]
             good.forEach(w => {

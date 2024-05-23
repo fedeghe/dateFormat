@@ -1,7 +1,7 @@
 var validatedate = (function() {
-    var _F = "$defaults.format$",
-        _S = $defaults.separators$,
+    var _S = $defaults.separators$,
         _P = $defaults.placeholders$,
+        _F = _P.join('-'),
         _PY = _P[0], _PM = _P[1], _PD = _P[2], _PY2='YY';  
     $$isValidDate.js$$
     $$isValidFormat.js$$

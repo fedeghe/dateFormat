@@ -9,6 +9,7 @@ function isValidFormat(format, separators, placeholders) {
         sepOk = true,
         lesLength = placeholders.reduce((acc, s) => acc + s.length, 0),
         targetLen = lesLength + sep.length;
+    /* istanbul ignore else */
     if (separators) sep.forEach(function (s) {
         sepOk = sepOk && separators.includes(s);
     });
