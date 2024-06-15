@@ -1,6 +1,6 @@
 {
     "defaults": {
-        "placeholders": ["YYYY", "MM", "DD"],
+        "placeholders": ["YYYY", "MM", "dd"],
         "format": "$defaults.placeholders.0$-$defaults.placeholders.1$-$defaults.placeholders.2$",
         "separators": ["/", "-", "."]
     }

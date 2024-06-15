@@ -21,8 +21,8 @@ describe('validatedate.isValidDate', () => {
             ['2013-11-30'],
             ['2013-12-31'],
             //
-            ['2013-12-31', 'YYYY-MM-DD'],
-            ['13-12-31', 'YY-MM-DD'],
+            ['2013-12-31', 'YYYY-MM-dd'],
+            ['13-12-31', 'YY-MM-dd'],
             
             
         ]
@@ -45,9 +45,9 @@ describe('validatedate.isValidDate', () => {
             ['2013-11-31'],
             ['2013-12-32'],
             //
-            ['2013-12-31', 'YYYY-DD-MM'],
+            ['2013-12-31', 'YYYY-dd-MM'],
             ['2013-12-31', 'YYYY-MM-nn'],
-            ['13:12:31', 'YY:MM:dd', ['YY', 'MM', 'dd'], [':']],
+            ['13:12:31', 'YY:MM:DD', ['YY', 'MM', 'dd'], [':']],
         ]
         good.forEach(w => {
             const res = validatedate.isValidDate(...w);

@@ -7,13 +7,13 @@ describe('validatedate.isValidFormat', () => {
     
         it('basic positive cases', () => {
             const good = [
-                ['YYYY-MM-DD'],
-                ['YYYY-DD-MM'],
-                ['DD-MM-YYYY'],
-                ['DD-YYYY-MM'],
-                ['MM-DD-YYYY'],
-                ['MM-YYYY-DD'],
-                ['MMƒDD^YYYY', ['^', 'ƒ']],
+                ['YYYY-MM-dd'],
+                ['YYYY-dd-MM'],
+                ['dd-MM-YYYY'],
+                ['dd-YYYY-MM'],
+                ['MM-dd-YYYY'],
+                ['MM-YYYY-dd'],
+                ['MMƒdd^YYYY', ['^', 'ƒ']],
                 ['month-day-year', ['-'], ['day', 'month', 'year']],
                 
             ]
