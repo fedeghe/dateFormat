@@ -1,6 +1,6 @@
 {
   "name": "@fedeghe/validatedate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "repository": "https://github.com/fedeghe/dateFormat.git",
   "author": "fedeghe <fedeghe@gmail.com>",
